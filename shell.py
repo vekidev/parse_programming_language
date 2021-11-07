@@ -1,8 +1,8 @@
-import purse
+import parse
 while True:
     text = input(f"parse > ")
     if text.strip() == "": continue
-    result, error = purse.run('<stdin>', text)
+    result, error = parse.run('<stdin>', text)
 
     if error:
             print(error.as_string())
